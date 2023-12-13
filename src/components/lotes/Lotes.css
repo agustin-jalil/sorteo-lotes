@@ -1,0 +1,228 @@
+.lote-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.lote-outer-div {
+    height: auto;
+    width: 97vw;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px 0px lightblue;
+}
+
+
+.lote-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Card styles */
+}
+
+.lote-form-label{
+    font-size: large;
+    font-weight: 500;
+    color: gray;
+}
+
+.lote-option-item{
+    color: black; /* Change text color */
+    font-size: 14px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+.lote-form-control{
+    width: 75%;
+    height: 25vh;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: start;
+    padding-inline: 20px;
+}
+
+.lote-form-control:focus{
+    box-shadow: 0px 0px 10px 0px lightblue;
+    border: 1px solid lightblue;
+}
+
+.lote-card-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.lote-card-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+
+.lote-card-container::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+    border-radius: 5px; /* Thumb border radius */
+}
+
+.lote-card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #a8a8a8;
+ }
+
+.lote-option-item{
+    color: black; /* Change text color */
+    font-size: 14px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+.lote-card{
+    height: 30vh;
+    width: 100%;
+}
+
+.lote-card-img{
+    height: 60%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    background-color: white;
+}
+
+.lote-card-h3{
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    padding-inline: 10px;
+}
+
+.lote-card-strong{
+    place-items: center;
+    color: darkred;
+    padding-inline: 10px;
+}
+.lote-card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lote-card-link:hover{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+
+    .lote-outer-div {
+        padding: 15px;
+    }
+
+    .lote-main-heading{
+        grid-column: 1 / span 3; /* Spans 4 columns */
+        text-align: center;
+        text-decoration: underline lightblue;
+    }
+
+    .lote-inner-div{
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .lote-form-label{
+        font-size: large;
+        font-weight: 500;
+        color: gray;
+    }
+
+    .lote-card-container {
+        height:auto;
+        padding-block: 10px;
+        display: grid; /* Change display to grid */
+        grid-template-columns: repeat(1, 1fr); /* Three columns for the grid */
+        grid-column: 1 / span 3; /* Spans 4 columns */
+        grid-gap: 20px; /* Add some gap between the cards */
+        padding-inline: 10px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .lote-outer-div {
+        padding: 15px;
+    }
+
+    .lote-main-heading{
+        grid-column: 1 / span 3; /* Spans 4 columns */
+        text-align: center;
+        text-decoration: underline lightblue;
+    }
+
+    .lote-inner-div{
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .lote-form-label{
+        font-size: large;
+        font-weight: 500;
+        color: gray;
+    }
+
+    .lote-card-container {
+        height:auto;
+        display: grid; /* Change display to grid */
+        grid-template-columns: repeat(3, 1fr); /* Three columns for the grid */
+        padding-block: 10px;
+        grid-column: 1 / span 3; /* Spans 4 columns */
+        grid-gap: 20px; /* Add some gap between the cards */
+        padding-inline: 10px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 3000px){
+    .lote-outer-div {
+        display: grid; /* Change display to grid */
+        grid-template-columns: repeat(3, 1fr); /* Three columns for the grid */
+        padding: 7px;
+    }
+
+    .lote-main-heading{
+        grid-column: 1 / span 3; 
+        text-align: center;
+        text-decoration: underline lightblue;
+    }
+
+    .lote-inner-div{
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .lote-form-label{
+        font-size: large;
+        font-weight: 500;
+        color: gray;
+    }
+
+    .lote-card-container {
+        height: auto;
+        width: 99vw;
+        display: grid; /* Change display to grid */
+        grid-template-columns: repeat(6, 1fr); /* Three columns for the grid */
+        grid-gap: 20px; /* Add some gap between the cards */
+        margin-bottom: auto;
+        padding: 10px;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+      }
+}

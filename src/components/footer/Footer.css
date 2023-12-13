@@ -1,0 +1,89 @@
+.footer {
+    margin-top: auto;
+    height: 52px; /* Change height to auto to allow content to expand vertically */
+    width: 100%;
+    background: rgb(15, 37, 84);
+    background: linear-gradient(322deg, rgba(15, 37, 84, 1) 0%, rgba(173, 216, 230, 1) 85%);
+}
+
+.footer-content {
+    height: 52px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100%; /* Ensure the content occupies at least 100% height */
+}
+
+.footer-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.email-link, .social-link{
+    height: 100%;
+    width: 15%;
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+    color:white;
+    transition: 0.3s ease-in-out;
+}
+
+.email-link:hover, .social-link:hover{
+    text-decoration: none;
+    color: rgb(15, 37, 84);
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+    .email-link {
+        height: 100%;
+        width: 50%;
+        display: flex; /* Add this */
+        align-items: center; /* Add this */
+        justify-content: center; /* Add this */
+        font-size: small;
+        color:white;
+        text-decoration: none; 
+    }
+
+    .social-link {
+        height: 100%;
+        width: 15%;
+        display: flex; /* Add this */
+        align-items: center; /* Add this */
+        justify-content: center; /* Add this */
+        font-size: x-large;
+        color:white;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 3000px) {
+    .email-link {
+        height: 100%;
+        width: 50%;
+        display: flex; /* Add this */
+        align-items: center; /* Add this */
+        justify-content: start; /* Add this */
+        font-size: x-large;
+        color:white;
+        text-decoration: none; 
+        padding-left: 75px;
+    }
+
+    .social-link {
+        height: 100%;
+        width: 15%;
+        display: flex; /* Add this */
+        align-items: center; /* Add this */
+        justify-content: center; /* Add this */
+        font-size: xx-large;
+        color:white;
+    }
+}

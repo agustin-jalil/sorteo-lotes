@@ -1,0 +1,110 @@
+#root {
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100vw;
+  min-height: 100vh; /* Use min-height to ensure the content expands properly */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+  flex: 1;
+}
+ 
+
+.boton-terrenos{
+  border-radius:10px;
+  border: 1px solid yellow;
+  background-color:lightblue;
+  color: #0f2554;
+  font-size: x-large;
+  text-align:center;
+  transition: ease-in-out 0.3s;
+  padding: 10px;
+}
+
+.boton-terrenos:hover{
+  color: lightblue;
+  background-color:#0f2554;
+  text-decoration: none;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Thumb */
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: rgba(173,216,230,1); /* Color of the thumb */
+  border-radius: 5px; /* Round the thumb */
+}
+
+/* Track on hover */
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background: rgba(15,37,84,1); /* Change color on hover */
+}
+
+/* Button (top and bottom) */
+.scroll-bar::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar buttons */
+}
+
+
+.CompartirRedes-div-a-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  border-bottom: 1px solid lightblue;
+}
+
+.CompartirRedes-p {
+  font-size: x-large;
+}
+
+.CompartirRedes-link-a {
+  font-size: xx-large;
+  width: 10%;
+  text-align: center;
+  color: rgb(15, 37, 84);
+  transition: ease-in-out 0.3s;
+}
+
+.CompartirRedes-link-a:hover {
+  color: lightblue;
+}
+@media screen and (min-width: 100px) and (max-width: 768px) {
+
+  .CompartirRedes-link-a  {
+      font-size: x-large;
+      flex: 1;
+      text-align: center;
+  }
+  .CompartirRedes-p {
+      display: none;
+  }
+  .CompartirRedes-p-alt {
+      padding: 10px;
+      font-size: medium;
+  }
+
+  .boton-terrenos{
+    border-radius:5px;
+    font-size: medium;
+    padding-block: 5px;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 3000px) {
+  .lotesid-link-a {
+      font-size: xx-large;
+  }
+  .lotesid-p-alt {
+      display: none;
+  }
+}

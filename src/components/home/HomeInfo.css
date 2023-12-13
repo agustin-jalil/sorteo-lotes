@@ -1,0 +1,116 @@
+.HomeInfo-card {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px lightblue;
+    margin-block: 10px;
+  }
+  
+  .HomeInfo-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .HomeInfo-link:hover {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(234, 248, 255);
+  }
+  
+  .HomeInfo-img {
+    width: 100%;
+    height: auto; /* Set to auto to maintain aspect ratio */
+    max-height: 30%; /* Adjust the maximum height to your preference */
+    object-fit: cover; /* Maintains aspect ratio and covers the space */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .HomeInfo-h2{
+      text-decoration: underline lightblue;
+  }
+    .HomeInfo-h2, .HomeInfo-p {
+        padding-block: 5px;
+        padding-inline: 20px;
+        width: 100%;
+        max-height: 40%;
+        color: black;
+    }
+  
+    .HomeInfoCorto-card{
+        height: 50%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid lightblue;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px lightblue;
+        margin-block: 10px;
+        background-color: white;
+    }
+
+    .HomeInfoCorto-h2{
+        color: black;
+        font-weight: 500;
+        width: 100%;
+        max-height: 40%;
+        padding-inline: 20px;
+    }
+
+    .HomeInfoCorto-p{
+        color: black;
+        padding-inline: 20px;
+    }
+
+    .HomeInfoCorto-link{
+        height: 100%;
+        width: 100%;
+        transition: ease-in-out 0.3s;
+    }
+
+    .HomeInfoCorto-link:hover{
+        text-decoration: none;
+        background-color: rgb(234, 248, 255);
+        border-radius: 10px;
+    }
+
+
+  @media screen and (max-width: 425px) {
+    .HomeInfo-card {
+        height: 100%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HomeInfoCorto-card{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    }
+    
+/* Media query for mobile devices */
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    .HomeInfo-card  {
+      height: 100%;
+      width: 45%;
+      box-sizing: border-box;
+    }
+
+    
+    .HomeInfoCorto-card{
+        height: 100%;
+        width: 45%;
+        box-sizing: border-box;
+    }
+  }

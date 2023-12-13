@@ -1,0 +1,21 @@
+/* Styling for Iconbar */
+.Iconbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightblue;
+  }
+  
+  /* Styling for individual icons */
+  .Iconbar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(15, 37, 84);
+    transition: color 0.3s ease-in-out;
+    width: 15%;
+}
+  
+  /* Styling for individual icons on hover */

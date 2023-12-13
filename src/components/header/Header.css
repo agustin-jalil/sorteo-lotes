@@ -1,0 +1,97 @@
+/* Set the width of the .header-navbar and navigation to 100% of the parent container */
+.header-navbar, .nav-container {
+    width: auto;
+    background: rgb(15,37,84);
+    background: linear-gradient(322deg, rgba(15,37,84,1) 0%, rgba(173,216,230,1) 85%);
+  }
+  
+  /* Make the .nav-containerigation and its direct child div elements use flexbox layout */
+  .nav-container, .nav-container > div {
+    display: flex;
+  }
+  
+  /* Define the height and styling for the .header-navbar */
+  .header-navbar {
+    height: 52px;
+  }
+  
+  /* Style the navigation bar with a linear gradient background */
+  .nav-container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Align and justify the content inside the .nav-containerigation div */
+  .nav-container > .div-tags {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the anchor tags inside the .nav-containerigation .div-tags */
+  .nav-container > .div-tags > .div-a-tag {
+    height: 75%;
+    width: 75%;
+  }
+  
+  /* Ensure the images inside the anchor tags maintain their aspect ratio */
+  .nav-container > .div-tags > .div-a-tag > .div-img-tag {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 99%;
+    min-height: 99%;
+  }
+  
+    /* Media queries for different screen widths */
+    @media (min-width: 100px) and (max-width: 359px) {
+      /* Adjust the styles for the navigation divs for small screens */
+      .nav-container > .div-tags {
+        height: 100%;
+        width: 10%;
+        justify-content: end;
+      }
+      .nav-container > .div-tags {
+        height: 100%;
+        width: 15%;
+      }
+    }
+    
+    @media (min-width: 360px) and (max-width: 767px) {
+      /* Adjust the styles for the .nav-containerigation .div-tagss for medium screens */
+      .nav-container > .div-tags {
+        height: 100%;
+        width: 12.5%;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+      /* Adjust the styles for the .nav-containerigation .div-tagss for large screens */
+      .nav-container > .div-tags {
+        height: 100%;
+        width: 10%;
+      }
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+      /* Adjust the styles for the navigation .div-tagss for extra-large screens */
+      nav > .div-tags {
+        height: 100%;
+        width: 7.5%;
+      }
+    }
+    
+    @media (min-width: 1200px) and (max-width: 2159px) {
+      /* Adjust the styles for the navigation .div-tagss for very large screens */
+      nav > .div-tags {
+        height: 100%;
+        width: 5%;
+      }
+    }
+    
+    @media (min-width: 2159px) {
+      /* Adjust the styles for the navigation .div-tagss for extremely large screens */
+      nav > .div-tags {
+        height: 100%;
+        width: 5%;
+      }
+    }

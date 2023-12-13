@@ -1,0 +1,280 @@
+.main-ganador {
+  height: 87.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.ganador-container {
+  height: 75%;
+  width: 98%;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 0px 10px 0px rgba(173, 216, 230, 1);
+  padding-inline: 10px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.border-ganador {
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(173, 216, 230, 1);
+}
+
+
+.table-container {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.ganador-section-botones {
+  height: 15%;
+  width: 100%;
+}
+
+.ganador-img {
+  border-radius: 25px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.scroll-ganador {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.button-ganador {
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: x-large;
+}
+
+.datos-ganador-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.datos-ganador-titulo {
+  padding-inline: 25px;
+  width: 33.33%;
+}
+
+.datos-ganador-titulo>legend {
+  font-size: large;
+}
+
+.datos-ganador-nombre>legend {
+  font-size: large;
+}
+
+.datos-ganador-nombre {
+  padding-inline: 25px;
+  width: 66.66%;
+}
+
+.ganador-info {
+  height: 90%;
+  width: auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  overflow-y: auto;
+}
+
+.ganador-section-botones {
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  height: 10%;
+  width: 100%;
+}
+
+.ganador-section-botones>button {
+  height: 75%;
+  width: auto;
+}
+
+.ganador-especificaciones {
+  height: 40px;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono {
+  height: 30px;
+  width: 33.33%;
+  border-radius: 10px;
+  margin-inline: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.iconos-FontOne{
+  color: rgb(64, 184, 64) ;
+}
+
+.icono:hover .iconos-FontOne {
+  color: rgb(175, 243, 175);
+}
+
+.iconos-FontTwo{
+  color: gold ;
+}
+
+.icono:hover .iconos-FontTwo{
+  color: rgb(255, 255, 181);
+}
+
+.iconos-FontThree{
+  color: darkred;
+}
+
+.icono:hover .iconos-FontThree{
+  color: lightcoral;
+}
+
+.one {
+  background-color: rgb(175, 243, 175);
+  border: 1px solid rgb(64, 184, 64);
+}
+
+.one:hover {
+  background-color: rgb(64, 184, 64);
+  border: 1px solid rgb(175, 243, 175);
+}
+
+.two {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid gold;
+}
+
+.two:hover {
+  background-color: gold;
+  border: 1px solid lightgoldenrodyellow;
+}
+
+.three {
+  background-color: lightcoral;
+  border: 1px solid darkred;
+}
+
+.three:hover {
+  background-color: darkred;
+  border: 1px solid lightcoral;
+}
+
+@media (max-width: 768px) {
+  .ganador-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 3;
+      overflow-y: auto;
+  }
+
+  .ganador-section1 {
+    grid-area: 1 / 1 / 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ganador-section2 {
+    grid-area: 1 / 0 / 1 / 1;
+    background-color:  transparent;
+  } 
+  
+  .ganador-section3 {
+    grid-area: 1 / 1 / 1 / 1;
+    place-items: center;
+    margin: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .ganador-especificaciones{
+    width: 100%;
+  }
+
+  .ganador-section-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ganador-section-botones>button {
+    height: 75%;
+    width: 100%;
+    margin-block: 5px;
+    border-radius: 10px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .ganador-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+
+  .ganador-section1 {
+    grid-area: 1 / 1 / 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ganador-section2 {
+    grid-area: 1 / 2 / 3 / 2;
+  }
+  
+  .ganador-section3 {
+    grid-area: 2 / 1 / 2 / 2;
+    place-items: center;
+    margin: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  .ganador-especificaciones{
+    width: 75%;
+  }
+
+  .ganador-section-botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ganador-section-botones>button {
+    height: 75%;
+    width: 25%;
+    margin-block: 5px;
+    border-radius: 10px;
+  }
+
+}

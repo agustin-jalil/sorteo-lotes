@@ -1,0 +1,47 @@
+.home-foto-container {
+    height: 250px;
+    overflow: hidden; /* Ensures the image stays within the container */
+    text-align: center;
+    background-image: url('plaza.jpg');
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column;
+}
+
+.home-h1 {
+    color: white;
+    font-size: xxx-large;
+}
+.home-p{
+    color: white;
+    font-size: large;
+}
+
+.HomeCards-container {
+    height: 35vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: 25px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 425px) {
+    .HomeCards-container {
+        height: auto;
+       flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 425px) and (max-width: 1024px){
+    .HomeCards-container {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

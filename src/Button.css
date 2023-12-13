@@ -1,0 +1,12 @@
+.boton-default {
+    width: 35%;
+    padding: 10px;
+}
+
+@media (max-width: 1023px) {
+    .boton-default {
+        width: 100%;
+        font-size: small;
+    }
+}
+  
